@@ -1,15 +1,16 @@
 # Maintainer: Elijah Gregg <lovetocode999 at tilde dot team>
+gitversion=f623ad3e06d190de60b9d4ffa5f0fd91b831b66d
 pkgname=halmak-git
-pkgver=2.1.0.r20.g3647682
+pkgver=2.1.0.r30.gf623ad3
 pkgrel=1
 pkgdesc="The final version of the AI designed keyboard layout"
-arch=("x86_64")
+arch=("any")
 url="https://github.com/MadRabbit/halmak"
 license=("MIT")
 depends=("libxkbcommon")
 provides=("halmak")
 conflicts=("halmak")
-source=("git+https://github.com/MadRabbit/halmak.git")
+source=("git+https://github.com/MadRabbit/halmak.git#commit=$gitversion")
 md5sums=('SKIP')
 
 pkgver() {
